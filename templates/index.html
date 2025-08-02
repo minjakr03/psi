@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dobro došli</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: url("{% static 'photos/background.png' %}") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    {% include '_header.html' %}
+
+    <main>
+        <h1 style="color:white; text-shadow:2px 2px 5px black;">Dobro došli</h1>
+    </main>
+
+    {% include '_footer.html' %}
+</body>
+</html>
